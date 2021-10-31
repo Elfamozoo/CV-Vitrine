@@ -1,0 +1,568 @@
+/* Font pricipal du cv */
+@font-face {
+    font-family: 'Academic M54';
+    src: url('AcademicM54.woff2') format('woff2'),
+        url('AcademicM54.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Affichage dynamique */
+.dynamique {
+    height: 500px;
+    width: 200px;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+
+/* Navbar */
+
+#icone {
+    padding-left: 16px;
+}
+
+
+/* Backgrounds */
+
+.background {
+    background: url(img/coding.jpg) no-repeat center center;
+    ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+.background2 {
+    background: url(img/coding3.jpg) no-repeat center center;
+    ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.background3 {
+    background: url(img/coding2.jpg) no-repeat center center;
+    ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Titre principal */
+.presentation {
+    font-family: 'Academic M54';
+    font-size: 10em;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.43);
+
+}
+
+h2.presentation {
+    font-family: 'Academic M54';
+    font-style: italic;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.43);
+
+}
+
+/* Box de presentation */
+.box {
+    width: 500px;
+    border: 2px solid black;
+    padding: 70px;
+    margin: 20px;
+    background: rgba(66, 67, 82, 1)
+}
+
+.box p {
+    color: white;
+
+}
+
+#butcv .buttoncv {
+    font-family: 'Academic M54';
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 40px;
+}
+
+#butcv .buttoncv:active {
+    box-shadow: 0px 0px 0px 0px;
+    left: 5px;
+    top: 5px;
+}
+
+
+/* Titre des pages */
+.sous-pre {
+    font-family: 'Academic M54';
+    font-size: 7em;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.43);
+
+}
+
+h2.sous-pre {
+    font-family: 'Academic M54';
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.43);
+
+}
+
+
+/* Box langage */
+
+.box-langage {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    padding: 70px;
+    margin: -80px;
+    background: rgba(66, 67, 82, 1)
+}
+
+
+.prof {
+    height: 300px;
+}
+
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    font-size: 5em;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.list-inline h3 {
+    font-family: 'Academic M54';
+    font-style: italic;
+    color: white;
+    font-size: 0.6em;
+}
+
+
+#comp .fas {
+    color: green;
+    width: 2%;
+}
+
+.text-comp {
+    font-size: 0.3em;
+    color: white;
+    line-height: 200%;
+}
+
+
+
+.logolangue {
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* Timeline  */
+
+#timeline {
+    display: flex;
+    background-color: rgba(66, 67, 82, 1)
+}
+
+#timeline:hover .tl-item {
+    width: 23.3333%;
+}
+
+.tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.tl-item:before,
+.tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tl-item:after {
+    background: rgba(66, 67, 82, 1);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.tl-item:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tl-item:hover {
+    width: 30% !important;
+}
+
+.tl-item:hover:after {
+    opacity: 0;
+}
+
+.tl-item:hover:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) translateY(0);
+    transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+
+.tl-item:hover .tl-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.75s ease 0.5s;
+}
+
+.tl-item:hover .tl-bg {
+    filter: grayscale(0);
+}
+
+.tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 55%;
+    opacity: 0;
+}
+
+.tl-content h1 {
+    font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: gold;
+    font-size: 1.44rem;
+    font-weight: normal;
+}
+
+.tl-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tl-year p {
+    font-family: 'Academic M54';
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+
+
+/* Timeline responsive  */
+
+
+.accordion {
+    font-family: 'Academic M54';
+    display: none;
+
+}
+
+.accordion-body {
+    background: rgba(66, 67, 82, 1);
+    color: #fff;
+
+}
+
+.accordion-body strong {
+    color: gold;
+}
+
+#accordion-but {
+    background: rgba(66, 67, 82, 1);
+    color: #fff;
+    border-color: black;
+
+}
+
+
+/* Media Queries  */
+
+
+
+/* Tablette  */
+
+@media (max-width: 991.98px) {
+    .smart {
+        height: 350px;
+    }
+
+    .presentation {
+        font-size: 6em;
+    }
+
+    h2.presentation {
+        font-size: 5em;
+    }
+
+    .box {
+        padding: 50px;
+    }
+
+    .box p {
+        font-size: 1.2em;
+    }
+
+    .sous-pre {
+        font-size: 5em;
+    }
+
+    h2.sous-pre {
+        font-size: 3em;
+    }
+
+    .list-inline h3 {
+        font-size: 0.6em;
+    }
+
+    .list-inline-item {
+        font-size: 0.6em;
+    }
+
+
+
+    #comp {
+        font-size: 0.8em;
+    }
+
+    #comp .fas {
+        font-size: 1em;
+        width: 5%;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+
+}
+
+
+/* Smartphone Phablette  */
+
+@media (max-width: 575.98px) {
+    .smart {
+        height: 245px;
+    }
+
+    .presentation {
+        font-size: 4em;
+    }
+
+    h2.presentation {
+        font-size: 3em;
+    }
+
+    .box {
+        padding: 50px;
+    }
+
+    .box-langage {
+        padding: 25px;
+    }
+
+
+    .logolangue {
+        width: 40px;
+        height: 35px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .box p {
+        font-size: 1em;
+    }
+
+    .sous-pre {
+        font-size: 4em;
+    }
+
+    h2.sous-pre {
+        font-size: 3em;
+    }
+
+    .list-inline h3 {
+        font-size: 0.4em;
+    }
+
+    #comp .fas {
+        font-size: 1em;
+        width: 9%;
+    }
+
+    .text-comp {
+        font-size: 0.2em;
+        color: white;
+        line-height: 200%;
+    }
+
+
+    .list-inline-item {
+        font-size: 0.5em;
+    }
+
+    #butcv .buttoncv {
+        font-size: 0.6em;
+        margin-top: 18px;
+    }
+
+
+    #timeline {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+}
+
+
+/* Smartphone classique  */
+
+@media (max-width: 380px) {
+    .smart {
+        height: 245px;
+    }
+
+    .presentation {
+        font-size: 4em;
+    }
+
+    h2.presentation {
+        font-size: 3em;
+    }
+
+    .box {
+        padding: 50px;
+    }
+
+
+    .box-langage {
+        padding: 40px;
+    }
+
+
+    .logolangue {
+        width: 30px;
+        height: 24px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .box p {
+        font-size: 0.95em;
+    }
+
+    .sous-pre {
+        font-size: 4em;
+    }
+
+    h2.sous-pre {
+        font-size: 3em;
+    }
+
+    .list-inline h3 {
+        font-size: 0.3em;
+    }
+
+
+    #comp .fas {
+        font-size: 1em;
+        width: 9%;
+    }
+
+    .text-comp {
+        font-size: 0.2em;
+        color: white;
+        line-height: 200%;
+    }
+
+    .list-inline-item {
+        font-size: 0.3em;
+    }
+
+
+    #butcv .buttoncv {
+        font-size: 0.6em;
+        margin-top: -12px;
+    }
+
+
+    #timeline {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+
+
+}
