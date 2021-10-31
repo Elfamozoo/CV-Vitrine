@@ -385,6 +385,7 @@ h2.sous-pre {
 
     #comp {
         font-size: 0.8em;
+        margin: -18px;
     }
 
     #comp .fas {
@@ -425,6 +426,7 @@ h2.sous-pre {
 
     .box-langage {
         padding: 25px;
+        margin: -40px;
     }
 
 
@@ -469,7 +471,7 @@ h2.sous-pre {
 
     #butcv .buttoncv {
         font-size: 0.6em;
-        margin-top: 18px;
+        margin-top: -8px;
     }
 
 
@@ -506,6 +508,7 @@ h2.sous-pre {
 
     .box-langage {
         padding: 40px;
+        margin: -38px;
     }
 
 
